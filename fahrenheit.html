@@ -34,7 +34,7 @@
             <a class="nav-link" href="fahrenheit.html">Fahrenheit</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="registration.html">Create Account</a>
+            <a class="nav-link" href="mortgage.html">Mortgage Calculator</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
@@ -52,19 +52,21 @@
     
     
     <section>
-    <div class="container" id="Celsiusconverter">
+    <div class="container" id="Farenhietconverter">
         <div class ="row">
             <div class = "col">
                 <div class="card"></div>
                 <div class="card-body">
                     <h5> Fahrenheit Converter</h5>
-                    <h6>Convert to Celsius to Fahrenheit Now</h6>
+                    <h6>Convert Fahrenheit to Celsius Now</h6>
 
                     <form>
                         <div>
                             <p> Fahrenheit  <br> <input type="number" id="fahrenheitInputField" /> </p>
-                            <p> Celsius  <br> <input type="number" id="celsiusInputField" /> </p>
-                            <input type="button" id="CelsiusConvert" value="Convert">
+                            <input type="button" id="fahrenheitConvertbtn" value="Convert">
+                            <p> Celsius  <br> <input type="number" id="celsiusInputField" readonly /> </p>
+                         
+                            <input type="button" id="resetbtn" value="Reset" onclick="this.form.reset();">
                         </div>
                     </form>
                 </div>
@@ -81,6 +83,6 @@
 
 </footer>
 
-<script src="/scripts/celsius.js"></script>
+<script src="/scripts/fahrenheit.js"></script>
 </body>
 </html>

@@ -57,15 +57,19 @@
             <div class = "col">
                 <div class="card"></div>
                 <div class="card-body">
-                    <h5> Celsius Converter</h5>
-                    <h6>Convert to Celsius to Fahrenheit Now</h6>
+                    <h5> Mortgage Calculator</h5>
+                    <h6>Calculate your mortgage Now</h6>
 
                     <form>
                         <div>
-                            <p> Celsius  <br> <input type="number" id="celsiusInputField" /> </p>
-                            <input type="button" id="CelsiusConvertbtn" value="Convert">
-                            <p> Fahrenheit  <br> <input type="number" id="fahrenheitInputField" readonly /> </p>
-
+                            <p> Principal <br> <input type="number" id="principal" /> </p>
+                            
+                            <p> Interest Rate  <br> <input type="number" id="interestRate"  /> </p>
+                            <p>Loan Length <br> <input type="number" id="loanLength"> </p>
+                            <input type="button" id="Calculatebtn" value="Calculate">
+                            <p> Answer <br> <input type="button" id="answerbtn" value="Answer" readonly/> </p>
+                            
+                            
                             <input type="button" id="resetbtn" value="Reset" onclick="this.form.reset();">
                             
                         </div>
