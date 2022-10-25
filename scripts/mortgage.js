@@ -11,15 +11,15 @@ function init() {
 function onCalculatebtnClicked(){
     //Find HTML elements 
  
- const principalinputField = document.getElementById("principalinputField");
-const interestRateInputField= document.getElementById("interestRateInputField");
-const loanLengthInputField = document.getElementById("LoanLengthInputField");
+  const principalinputField = document.getElementById("principalinputField");
+  const interestRateInputField= document.getElementById("interestRateInputField");
+  const loanLengthInputField = document.getElementById("LoanLengthInputField");
 
 
-let interestInput= (interestRateInputField/100)/12;
- let loanLenthInput = loanLengthInputField * 12;
- let principalInput = (principalinputField * interestInput)/(1-Math.pow(1+interestRateInputField,-loanLenthInput));
-let payment = principalInput;
+  let interestInput= Number((interestRateInputField/100)/12);
+  let loanLenthInput = Number(loanLengthInputField * 12);
+  let principalInput = Number(principalinputField);
+  let payment = (principalInput * interestInput)/(1-Math.pow(1+interestInput,-loanLenthInput));
  const  monthlyInputField= document.getElementById("MonthlyInputField");
  monthlyInputField.value = payment;
 
