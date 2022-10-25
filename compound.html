@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fahrenheit Calculator </title>
+    <title> Converter Calculator </title>
 
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -38,7 +38,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="compound.html">CD Calculator</a>
-          </li>
+
         </div>
     </div>
   </nav>
@@ -49,21 +49,26 @@
     
     
     <section>
-    <div class="container" id="Farenhietconverter">
+    <div class="container" id="Celsiusconverter">
         <div class ="row">
             <div class = "col">
                 <div class="card"></div>
                 <div class="card-body">
-                    <h5> Fahrenheit Converter</h5>
-                    <h6>Convert Fahrenheit to Celsius Now</h6>
+                    <h5> Compound Interest Calculator</h5>
+                    <h6>Calculate your CD Now!</h6>
 
                     <form>
                         <div>
-                            <p> Fahrenheit  <br> <input type="number" id="fahrenheitInputField" /> </p>
-                            <input type="button" id="fahrenheitConvertbtn" value="Convert">
-                            <p> Celsius  <br> <input type="number" id="celsiusInputField" readonly /> </p>
-                         
+                            <p> Deposit  <br> <input type="number" id="principal" /> </p>
+                            
+                            <p> Interest Rate  <br> <input type="number" id="interestRate"  /> </p>
+                            <p>Years <br> <input type="number" id="loanLength"> </p>
+                            <input type="button" id="Calculatebtn" value="Calculate">
+                            <p> Calculate <br> <input type="number" id="answer" readonly/> </p>
+                            
+                            
                             <input type="button" id="resetbtn" value="Reset" onclick="this.form.reset();">
+                            
                         </div>
                     </form>
                 </div>
@@ -80,6 +85,6 @@
 
 </footer>
 
-<script src="/scripts/fahrenheit.js"></script>
+<script src="/scripts/compound.js"></script>
 </body>
 </html>
