@@ -59,15 +59,30 @@
 
                     <form>
                         <div>
-                            <p> Deposit  <br> <input type="number" id="DepositInputField" /> </p>
+                          <div class="mb-3">
+                            <label for="DepositInputField" class="form-lavel">Deposit</label>
+                            <input type="text" class="form-control" id="DepositInputField" placeholder="Input Number Here" /> 
+                        </div>
+                        
+                        <div class="mb-3">
+                          <label for="interestRate" class="form-lavel">Interest Rate</label>
+                          <input type="text" class="form-control" id="interestRate" placeholder="Input Number Here" /> 
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="YearsInputField" class="form-lavel">Years</label>
+                        <input type="text" class="form-control" id="YearsInputField" placeholder="Input Number Here" /> 
+                    </div>
                             
-                            <p> Interest Rate  <br> <input type="number" id="interestRate"  /> </p>
-                            <p>Years <br> <input type="number" id="YearsInputField"> </p>
-                            <input type="button" id="Calculatebtn" value="Calculate">
-                            <p> Compund Interest <br> <input type="number" id="CompoundInterestField" readonly/> </p>
+                
+                            <input type="button" id="Calculatebtn" class="btn btn-warning" value="Calculate">
                             
+                            <div class="mb-3">
+                              <label for="CompoundInterestField" class="form-lavel">Compund Interest</label>
+                              <input type="text" class="form-control" id="CompoundInterestField" placeholder="Input Number Here" readonly /> 
+                          </div>
                             
-                            <input type="button" id="resetbtn" value="Reset" onclick="this.form.reset();">
+                            <input type="button" id="resetbtn" value="Reset" class="btn btn-warning onclick="this.form.reset();">
                             
                         </div>
                     </form>
