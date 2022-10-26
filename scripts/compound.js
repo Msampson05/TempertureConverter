@@ -1,22 +1,27 @@
 "use strict";
-// Compound Interest Calculator 
-window.onload() = init;
+// Compound Interest Calculator
+
+window.onload = init;
+
 function init() {
-// Find HTML elements 
-    const DepositInputField = document.getElementById("DepositInputField");
-    const interestRate = document.getElementById("interestRate");
-    const YearsInputField = document.getElementById("YearsInputField");
+
 // Calculate Button
-    const Calculatetbtn = document.getElementById("Calculatetbtn");
-    Calculatetbtn.onclick = onCalculatebtnClicked;
+    const Calculatebtn = document.getElementById("Calculatebtn");
+    Calculatebtn.onclick = onCalculatebtnClicked;
+}
 
 function onCalculatebtnClicked(){
-    let depositInput = DepositInputField;
-    let interestInput = interestRate/100;
+
+// Find HTML elements 
+const DepositInputField = document.getElementById("DepositInputField");
+const interestRate = document.getElementById("interestRate");
+const YearsInputField = document.getElementById("YearsInputField");
+    let depositInput = Number(DepositInputField.value);
+    let interestInput = Number(interestRate.value)/1200;
     let numberOfTime = 12;
-    let YearsInput = YearsInputField;
+    let YearsInput = Number(YearsInputField.value);
     let compoundInterest = depositInput * (Math.pow((1 + (interestInput/numberOfTime)), (numberOfTime * YearsInput)));
      const CompoundInterestField = document.getElementById("CompoundInterestField");
-     CompoundInterestField = compoundInterest
+     CompoundInterestField.value = compoundInterest
 }
-}
+
